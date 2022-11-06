@@ -1,0 +1,205 @@
+:root {
+    /* COLORS */
+
+  /* Primary Colors */
+
+--soft-blue: hsl(215, 51%, 70%);
+--cyan: hsl(178, 100%, 50%);
+
+  /* Neutral Colors */
+
+--very-dark-blue: hsl(217, 54%, 11%);
+--very-dark-blue-bg:  hsl(216, 50%, 16%);
+--very-dark-blue-line: hsl(215, 32%, 27%);
+--white: hsl(0, 0%, 100%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+    
+}
+
+body {
+    font-size: 18px;
+    background-color: hsl(216, 50%, 13%);
+}
+
+/* Content */
+
+.outer-container {
+    display: grid;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+#card {
+    width: 23rem;
+    height: auto;
+    background-color: var(--very-dark-blue-bg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 18px;
+    box-shadow: 0 20px 0 13px var(--very-dark-blue), 0 20px 30px 30px var(--very-dark-blue);
+    
+}
+
+
+
+.cube-img {
+    width: 23rem;
+    height: 23rem;
+    border-radius: 30px;
+    padding: 20px;
+    position: relative;
+    
+    
+}
+
+.cube-img:hover {
+  cursor: pointer;
+    position: relative;
+    opacity: 0.7;
+}
+.top-content {
+    height: 23rem;
+   
+}
+.top-content:hover {
+    background-color: var(--cyan);
+    border-radius: 32px;
+    outline: 21px solid var(--very-dark-blue-bg);
+    outline-offset: -20.9px;
+    background-image: url(images/icon-view.svg);
+    background-size: 30%;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+    
+}
+
+
+h3 {
+    color: var(--white);
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+
+h3:hover {
+    color: var(--cyan);
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+.nft-info {
+    color: var(--soft-blue);
+    font-weight: 300;
+    padding-left: 20px;
+    line-height: 1.6rem;
+    margin-bottom: 20px;
+    
+}
+
+.grid-infos {
+    margin-bottom: 20px;
+}
+
+.price {
+    color: var(--cyan);
+    font-size: 0.9rem;
+    font-weight: 500;
+    line-height: 1.1rem;
+    padding-left: 20px;
+    display: inline-block;
+}
+
+.day-left {
+    color: var(--soft-blue);
+    font-size: 0.9rem;
+    display: inline-block;
+    float: right;
+    padding-right: 20px;
+}
+
+.avatar {
+    width: 40px;
+    height: auto;
+    border: 1px solid var(--white);
+    border-radius: 25px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 12px; 
+    
+}
+
+.card-footer 
+{
+    padding-bottom: 25px;
+    width: 100%;
+    padding-left: 20px;
+    
+
+}
+.name {
+    display: inline-block;
+    color: var(--soft-blue);
+}
+
+.eth {
+    vertical-align: sub;
+    margin-right: 3px;
+}
+
+.clock {
+    vertical-align: sub;
+    margin-right: 3px;
+}
+
+hr {
+    border: 1px solid var(--very-dark-blue-line);
+    margin: 15px 20px;
+}
+
+span {
+    color: var(--white);
+}
+
+span:hover {
+    color: var(--cyan);
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+@media screen and (max-width: 400px) {
+    #card {
+        width: 20rem;
+    }
+
+    .cube-img {
+        width: 20rem;
+        height: 20rem;
+    }
+
+    .top-content {
+        height: 20rem;
+       
+    }
+}
+
+/* Footer */
+
+.attribution {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
